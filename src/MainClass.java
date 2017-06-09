@@ -6,7 +6,5 @@ public class MainClass {
 //        CardDeck deck = new CardDeck();
 //        deck.display();
         Game newGame = new Game();
-        System.out.println("try to commit changes");
-        System.out.println(newGame.firstPlayer());
     }
 }

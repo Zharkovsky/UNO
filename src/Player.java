@@ -6,16 +6,15 @@ import java.util.List;
  */
 abstract public class Player {
 
-    String name;
+    private String name;
+    public int numberOfCards;
+
     private List<Card> cards = new ArrayList<>();
 
     abstract public void makeStep(Card currentCard);
 
-    public void pickUpCard(Card card){
-        cards.add(card);
-    }
 
-    public Card getCard(int i){
+    public Card putCard(int i){
         Card card = get(i);
         eraseCard(i);
         return card;
